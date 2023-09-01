@@ -28,7 +28,11 @@
    ```shell
    pip install -r requirements.txt
 
-3. Для запуска тестов используйте команду:
+5. Для запуска тестов используйте команду:
    ```shell
-   python run_file.py
+   python -m pytest -s -v
+   
+6. Для просмотра отчета в Allure:
+   ```shell
+   python -m pytest --alluredir=test_results/ tests/test_google_maps_api.py && allure serve test_results
 
