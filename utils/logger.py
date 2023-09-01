@@ -6,7 +6,7 @@ class Logger:
     if not os.path.isdir('logs'):
         os.mkdir('logs')
     path = os.getcwd()
-    file_name = f"{path}\logs\log_" + str(
+    file_name = f"{path}\\logs\\log_" + str(
         datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".log"
 
     @classmethod

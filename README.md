@@ -12,15 +12,23 @@
 
 ## Установка и настройка
 
-1. Создайте виртуальное окружение:
+1. Клонируйте репозиторий
+   ```shell
+   git clone https://github.com/MaksimPopov21/git_api_test.git
+   
+2. Создайте виртуальное окружение:
    ```shell
    python -m venv venv
-
-2. Установите зависимости из файла requirements.txt:
+   
+3. Перейдите в проект
    ```shell
-   pip install -r api_api/requirements.txt
+   cd git_api_test
+
+4. Установите зависимости из файла requirements.txt:
+   ```shell
+   pip install -r requirements.txt
 
 3. Для запуска тестов используйте команду:
    ```shell
-   python api_api/run_file.py
+   python run_file.py
 
