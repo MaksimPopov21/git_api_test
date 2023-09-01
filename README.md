@@ -10,5 +10,17 @@
 - `tests/` - директория с тестами
 - `utils/` - директория с методами для отправки и проверки запросов
 
+## Установка и настройка
 
+1. Создайте виртуальное окружение:
+   ```shell
+   python -m venv venv
+
+2. Установите зависимости из файла requirements.txt:
+   ```shell
+   pip install -r api_api/requirements.txt
+
+3. Для запуска тестов используйте команду:
+   ```shell
+   python api_api/run_file.py
 
