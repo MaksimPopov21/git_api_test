@@ -12,27 +12,23 @@
 
 ## Установка и настройка
 
-1. Клонируйте репозиторий
+1. Создайте виртуальное окружение:
    ```shell
-   git clone https://github.com/MaksimPopov21/git_api_test.git
+   python -m venv venv && cd venv
    
-2. Создайте виртуальное окружение:
+2. Клонируйте репозиторий
    ```shell
-   python -m venv venv
-   
-3. Перейдите в проект
-   ```shell
-   cd git_api_test
+   git clone https://github.com/MaksimPopov21/git_api_test.git && cd git_api_test
 
-4. Установите зависимости из файла requirements.txt:
+3. Установите зависимости из файла requirements.txt:
    ```shell
    pip install -r requirements.txt
 
-5. Для запуска тестов используйте команду:
+4. Для запуска тестов используйте команду:
    ```shell
    python -m pytest -s -v
    
-6. Для просмотра отчета в Allure:
+5. Для просмотра отчета в Allure:
    ```shell
    python -m pytest --alluredir=test_results/ tests/test_google_maps_api.py && allure serve test_results
 
